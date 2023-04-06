@@ -1,13 +1,11 @@
 # DingDong
 
-Connected Doorbell with ESP32 (Espressif Wifi Module)
+Cette sonnette permet de recevoir une notification sur son Smartphone (Android ou Apple) lorsque quelqu'un sonne à votre porte.
 
-The Doorbell have to be connected to local network (use of WPS) with action on pushbutton.
+Pour cela, la sonnette doit etre connecté au reseau WiFi et permettre d'enregistrer son identifiant SimplePush.
 
-A Pushbutton detection send a notification to SimplePush application (android and iphone).
-The mobile application gives an ID to be configured on the Doorbell device.
-For this a Webpage is embedded in the doorbell application available with dDNS (local adress) and permit to set two IDs.
+Pour la connexion WiFi, l'ESP32 se connecte grace au WPS.
+Pour enregistrer l'identifiant (2 possibles), l'ESP32 dispose d'une page Web embarquée accessible grace à l'utilisation de mDNS.
+De plus, les mises à jour sont possibles grace à une page web specifique.
 
-The device can be upgraded via a specific webpage to download the new firmware.
-
-See notice.pdf for user guide and credits.
+Voir la notice PDF pour le mode d'emploi et les crédits.
